@@ -15,5 +15,13 @@
 
 .hero-p .swiper-pagination-bullet-active {
     height: 26px;
+    background-image: url("../../../assets/bullet_active.png") !important;
     border-radius: 20px;
+}
+
+
+.hero_leading {
+    background-image: url("../../../assets/logo.gif");
+    -webkit-background-clip: text;
+    color: transparent;
 }

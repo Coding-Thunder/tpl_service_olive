@@ -7,7 +7,7 @@ import ReadMore from "../../ReadMore/ReadMore"
 const Sustainability = () => {
     return (
         <section className="sustainability min-h-[700px] max-h-fit w-full flex justify-start items-center px-20">
-            <div className="stories bg-green_app-1 h-[500px] w-[700px] bg-opacity-70 text-white">
+            <div className="stories bg-green_app-1 h-[500px] w-[700px] flex  justify-center items-center bg-opacity-70 text-white">
                 <div className="p-12 flex flex-col items-start justify-center gap-6">
                     <p className="text-5xl">Sustainability</p>
                     <p>

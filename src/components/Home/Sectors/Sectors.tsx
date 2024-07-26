@@ -14,8 +14,8 @@ import ReadMore from "../../ReadMore/ReadMore";
 
 const Sectors = () => {
     return (
-        <section className="h-[700px] w-4/5 mx-auto py-10 ">
-            <p className="text-5xl text-blue_app_2 text-center mb-20">
+        <section className="h-[800px] w-4/5 mx-auto flex flex-col justify-center items-center gap-20 py-20">
+            <p className="text-5xl text-blue_app_2 text-center">
                 Sector We Operate
             </p>
             <div className="sectors h-4/5 flex justify-between items-center rounded-xl">

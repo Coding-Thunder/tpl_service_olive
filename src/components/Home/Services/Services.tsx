@@ -6,9 +6,9 @@ import person3 from "../../../assets/person3.png"
 
 const Services = () => {
     return (
-        <section className="py-20 lg:py-0 h-fit lg:h-[700px] bg-dark_app flex-col lg:flex-row flex justify-center ">
-            <div className="w-full lg:w-1/5 justify-center lg:justify-start items-center flex lg:flex-col gap-10 mx-auto lg:mx-0">
-                <div className="orange_gradient p-12 w-[350px] h-[250px] flex justify-center items-center">
+        <section className="py-20 lg:py-0 h-fit lg:h-[600px] bg-dark_app flex-col lg:flex-row flex justify-center ">
+            <div className="w-full lg:w-1/5 justify-center lg:justify-start  flex lg:flex-col gap-10 mx-auto lg:mx-0">
+                <div className="orange_gradient p-12 w-[350px] h-[250px] flex justify-center items-center ">
                     <p className="text-white text-5xl font-bold text-center">
                         Services We Offer
                     </p>
@@ -20,7 +20,7 @@ const Services = () => {
                     <ReadMore />
                 </div>
             </div>
-            <div className="flex-col md:flex-row w-full lg:w-4/5 flex justify-center items-center gap-10 mt-10">
+            <div className="flex-col mt-20 lg:mt-0 md:flex-row w-full lg:w-4/5 flex justify-center items-center gap-10">
                 <Card image={person1} link="#" service="some" />
                 <Card image={person2} link="#" service="some" />
                 <Card image={person3} link="#" service="some" />

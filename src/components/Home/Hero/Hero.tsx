@@ -29,13 +29,13 @@ const Hero = () => {
                 {heroText.map(({ leading, secondary }) => (
                     <>
                         <SwiperSlide className="z-0 w-full flex items-start flex-col justify-center bg-transparent text-white">
-                            <p className="text-8xl font-bold text-gray-600">
+                            <p className="hero_leading text-6xl lg:text-8xl font-bold">
                                 {leading}
                             </p>
-                            <p className="translate-x-4 text-5xl text-orage_app">
+                            <p className="translate-x-4 text-3xl lg:text-5xl text-orage_app">
                                 {secondary}
                             </p>
-                            <ReadMore className="mt-10 translate-x-8" />
+                            <ReadMore className="mt-4  lg:mt-10 translate-x-8" />
                         </SwiperSlide>
                     </>
                 ))}

@@ -7,6 +7,23 @@
   --red-gradient: linear-gradient(180deg, #EA4F21 0%, #FF0500 100%);
 }
 
+
+@font-face {
+  font-family: 'myriad';
+  src: url('./fonts/MYRIADPRO-BOLD.woff') format('woff'),
+    url('./fonts/MYRIADPRO-BOLDCOND.woff') format('woff'),
+    url('./fonts/MyriadPro-Light.woff') format('woff'),
+    url('./fonts/MYRIADPRO-REGULAR.woff') format('woff'),
+    url('./fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "myriad", sans-serif;
+  font-weight: normal;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -68,5 +85,3 @@
 .orange_gradient {
   background: linear-gradient(180deg, rgba(240, 121, 25, 0.98) 0%, rgba(230, 45, 41, 0.98) 100%);
 }
-
-.red_gradient {}
