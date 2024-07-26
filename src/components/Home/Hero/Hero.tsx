@@ -21,8 +21,12 @@ const Hero = () => {
                 pagination={{
                     clickable: true,
                 }}
+                speed={800}
+                autoplay={{
+                    delay: 6000, // Duration in milliseconds
+                    disableOnInteraction: false,
+                }}
                 loop={true}
-                autoplay={true}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 className="h-full w-5/6"
             >

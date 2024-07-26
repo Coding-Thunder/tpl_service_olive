@@ -28,7 +28,11 @@ const Sectors = () => {
                         clickable: true,
                     }}
                     loop={true}
-                    autoplay={true}
+                    speed={800}
+                    autoplay={{
+                        delay: 6000, // Duration in milliseconds
+                        disableOnInteraction: false,
+                    }}
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     className="h-full w-6/6 md:w-5/6"
                 >
