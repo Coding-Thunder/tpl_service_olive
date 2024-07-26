@@ -1,0 +1,20 @@
+.sectors {
+    background-image: url("../../../assets/sectors.png");
+    background-size: contain;
+}
+
+
+
+
+.sectors .swiper-pagination-bullet {
+    background: var(--red-gradient);
+    height: 100px;
+    border-radius: 0;
+    margin: 0 !important;
+    width: 4px;
+}
+
+
+.sectors .swiper-pagination-bullet-active {
+    height: 100px;
+}

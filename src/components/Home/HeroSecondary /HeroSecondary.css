@@ -1,0 +1,10 @@
+.hero-s {
+    background-image: url(../../../assets/hero2.png);
+    background-size: cover;
+}
+
+
+.hero-s-right {
+    background-image: url(../../../assets/hero2_right.png);
+    background-size: cover;
+}

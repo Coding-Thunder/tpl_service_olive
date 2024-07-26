@@ -1,0 +1,19 @@
+.hero-p {
+    background-image: url(../../../assets/hero.png);
+    background-size: cover;
+}
+
+
+.hero-p .swiper-pagination-bullet:not(:last-child) {
+    margin-bottom: 14px !important;
+}
+
+
+.hero-p .swiper-pagination-bullet {
+    background: var(--orange-primary);
+}
+
+.hero-p .swiper-pagination-bullet-active {
+    height: 26px;
+    border-radius: 20px;
+}
