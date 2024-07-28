@@ -29,8 +29,8 @@ const Navbar = () => {
                     <ImageIcons alt="Logo" src={logo} width={90} />
                 </Link>
                 <div className="flex justify-between items-center gap-10">
-                    {navLinksMiddle.map((item: Record<string, any>) => (
-                        <Link to={item.link}>
+                    {navLinksMiddle.map((item: Record<string, any>, idx) => (
+                        <Link key={'Nav1' + idx} to={item.link}>
                             {item.label}
                         </Link>
                     ))}
@@ -38,10 +38,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex justify-between items-center gap-4">
-                    {navImages.map(({ link, image, alt }) => {
+                    {navImages.map(({ link, image, alt }, idx) => {
                         let compliment = (alt === "tata")
                         return (
-                            <div className={`w-fit ${compliment && "mr-8"}`}>
+                            <div key={'Nav2' + idx} className={`w-fit ${compliment && "mr-8"}`}>
                                 <Link to={link}>
                                     <ImageIcons alt={alt} src={image} width={compliment ? 50 : 25} />
                                 </Link>

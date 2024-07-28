@@ -21,9 +21,9 @@ const Footer = () => {
             <div className="px-32 pt-8">
                 <div className="w-full mx-auto lg:mx-0 justify-between lg:pl-24  flex flex-wrap gap-10 lg:gap-0">
                     <div className="w-full lg:w-1/4 flex flex-col items-start  gap-2 ">
-                        {footerLinks.about_us.map(item => (
+                        {footerLinks.about_us.map((item, idx) => (
                             <>
-                                <Link className={item.leading ? "text-xl text-blue_app_2" : ""} to={item.link}>{item.name}</Link>
+                                <Link key={'Footer1' + idx} className={item.leading ? "text-xl text-blue_app_2" : ""} to={item.link}>{item.name}</Link>
                             </>
                         ))}
                         <Link className={"text-xl  text-blue_app_2"} to={"#"}>{footerLinks.careers}</Link>
@@ -32,29 +32,29 @@ const Footer = () => {
                     </div>
 
                     <div className="w-full lg:w-1/4 flex flex-col items-start gap-2 ">
-                        {footerLinks.services_we_offer.map(item => (
+                        {footerLinks.services_we_offer.map((item, idx) => (
                             <>
-                                <Link className={item.leading ? "text-xl text-blue_app_2" : ""} to={item.link}>{item.name}</Link>
+                                <Link key={'Footer2' + idx} className={item.leading ? "text-xl text-blue_app_2" : ""} to={item.link}>{item.name}</Link>
                             </>
                         ))}
 
-                        {footerLinks.communication.map(item => (
+                        {footerLinks.communication.map((item, idx) => (
                             <>
-                                <Link className={item.leading ? "text-xl text-blue_app_2" : ""} to={item.link}>{item.name}</Link>
+                                <Link key={'Footer3' + idx} className={item.leading ? "text-xl text-blue_app_2" : ""} to={item.link}>{item.name}</Link>
                             </>
                         ))}
                     </div>
                     <div className="w-full lg:w-1/4 flex flex-col items-start gap-2 ">
-                        {footerLinks.related_links.map(item => (
+                        {footerLinks.related_links.map((item, idx) => (
                             <>
-                                <Link className={item.leading ? "text-xl text-blue_app_2 uppercase" : ""} to={item.link}>{item.name}</Link>
+                                <Link key={'Footer4' + idx} className={item.leading ? "text-xl text-blue_app_2 uppercase" : ""} to={item.link}>{item.name}</Link>
                             </>
                         ))}
                     </div>
                     <div className="w-full lg:w-1/4 flex flex-col items-start gap-2 ">
-                        {footerLinks.contact_us.map(item => (
+                        {footerLinks.contact_us.map((item, idx) => (
                             <>
-                                <Link className={item.leading ? "text-xl text-blue_app_2" : "font-bold"} to={item.link}>{item.name}</Link>
+                                <Link key={'Footer5' + idx} className={item.leading ? "text-xl text-blue_app_2" : "font-bold"} to={item.link}>{item.name}</Link>
                             </>
                         ))}
                         <div className="flex items-start justify-start gap-4">

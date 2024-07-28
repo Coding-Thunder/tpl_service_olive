@@ -14,9 +14,9 @@ const Sustainability = () => {
                         Implementing sustainability practices in the operation and maintenance of a site involves various strategies aimed att...
                     </p>
 
-                    {sustainability.map(item => (
+                    {sustainability.map((item, idx) => (
                         <>
-                            <div className="flex justify-start items-center gap-4">
+                            <div key={'Sustainability' + idx} className="flex justify-start items-center gap-4">
                                 <div className="border border-white rounded-full">
                                     <ArrowUpRight className="size-4" />
                                 </div>

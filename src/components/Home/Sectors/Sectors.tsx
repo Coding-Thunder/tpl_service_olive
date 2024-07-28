@@ -36,9 +36,9 @@ const Sectors = () => {
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     className="h-full w-6/6 md:w-5/6"
                 >
-                    {sectors.map(({ name }) => (
+                    {sectors.map(({ name }, idx) => (
                         <>
-                            <SwiperSlide className="w-full flex items-center   justify-between bg-transparent text-white">
+                            <SwiperSlide key={'Sectors' + idx} className="w-full flex items-center   justify-between bg-transparent text-white">
                                 <div className="w-2/3 lg:w-2/5 xl:w-3/5 flex flex-col items-start gap-6">
                                     <p className="text-4xl font-bold text-blue_app capitalize">
                                         {name}
