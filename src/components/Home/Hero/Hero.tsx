@@ -9,8 +9,31 @@ import 'swiper/css/scrollbar';
 import { heroText } from "../../../utils/constants";
 import ReadMore from "../../ReadMore/ReadMore";
 import hero from "../../../assets/hero.png"
+import { useCallback, useEffect, useState } from "react";
+import myAxios from "../../../utils/axios/axios";
+import endPoints from "../../../utils/axios/endpoints";
 
 const Hero = () => {
+    const [banner, setBanner] = useState<Record<string, any> | null>(null)
+
+    // memoization of callback to prevent any upcoming unwanted renders due to change in the reference
+    const fetchBannerData = useCallback(async () => {
+        try {
+            const { data } = await myAxios.get(endPoints["/home-banner"])
+            if (data) {
+                console.log(data, "hero data")
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
+    }, [])
+
+
+    useEffect(() => {
+        fetchBannerData()
+    }, [fetchBannerData])
+
     return (
         <section className="hero-p w-svw h-[700px]">
 
@@ -31,9 +54,9 @@ const Hero = () => {
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 className="h-full z-0"
             >
-                {heroText.map(({ leading, secondary }) => (
+                {heroText.map(({ leading, secondary }, idx) => (
                     <>
-                        <SwiperSlide className="flex items-start flex-col justify-center bg-transparent text-white">
+                        <SwiperSlide key={'Hero' + idx} className="flex items-start flex-col justify-center bg-transparent text-white">
                             <img src={hero} alt="hero" className="absolute z-0 h-full w-full" />
                             <div className="z-10  w-5/6 mx-auto">
                                 <p className="hero_leading text-6xl lg:text-8xl font-bold">
