@@ -9,30 +9,30 @@ import 'swiper/css/scrollbar';
 import { heroText } from "../../../utils/constants";
 import ReadMore from "../../ReadMore/ReadMore";
 import hero from "../../../assets/hero.png"
-import { useCallback, useEffect, useState } from "react";
-import myAxios from "../../../utils/axios/axios";
-import endPoints from "../../../utils/axios/endpoints";
+// import { useCallback, useEffect, useState } from "react";
+// import myAxios from "../../../utils/axios/axios";
+// import endPoints from "../../../utils/axios/endpoints";
 
 const Hero = () => {
-    const [banner, setBanner] = useState<Record<string, any> | null>(null)
+    // const [banner, setBanner] = useState<Record<string, any> | null>(null)
 
-    // memoization of callback to prevent any upcoming unwanted renders due to change in the reference
-    const fetchBannerData = useCallback(async () => {
-        try {
-            const { data } = await myAxios.get(endPoints["/home-banner"])
-            if (data) {
-                console.log(data, "hero data")
-            }
+    // // memoization of callback to prevent any upcoming unwanted renders due to change in the reference
+    // const fetchBannerData = useCallback(async () => {
+    //     try {
+    //         const { data } = await myAxios.get(endPoints["/home-banner"])
+    //         if (data) {
+    //             console.log(data, "hero data")
+    //         }
 
-        } catch (error) {
-            console.log(error)
-        }
-    }, [])
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }, [])
 
 
-    useEffect(() => {
-        fetchBannerData()
-    }, [fetchBannerData])
+    // useEffect(() => {
+    //     fetchBannerData()
+    // }, [fetchBannerData])
 
     return (
         <section className="hero-p w-svw h-[700px]">
