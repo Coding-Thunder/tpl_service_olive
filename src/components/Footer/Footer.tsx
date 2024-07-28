@@ -93,7 +93,7 @@ const Footer = () => {
 
             </div>
             <hr className="border-t border-gray-300 my-4 " />
-            <div className="flex flex-col sm:flex-row text-sm items-center justify-between px-14 py-6">
+            <div className="flex  flex-col md:flex-row text-sm items-center justify-between px-14 py-6">
                 <p>© Copyright 2024. TPL Services. All Rights Reserved.</p>
                 <div className="flex items-center">
                     <p className="mr-2">Design and development by</p>
