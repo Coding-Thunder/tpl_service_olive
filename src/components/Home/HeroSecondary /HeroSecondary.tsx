@@ -8,7 +8,7 @@ import ImageIcons from "../../ImageIcons/ImageIcons"
 
 const HeroSecondary = () => {
     return (
-        <section className="hero-s h-fit  w-svw ">
+        <section className="hero-s h-fit  w-svw z-10">
             <div className="flex justify-center items-center w-5/6 mx-auto rounded-3xl overflow-hidden -translate-y-24">
                 <div className="bg-white h-fit  lg:h-[200px]  rounded-3xl lg:rounded-none w-3/4 p-12 flex items-start gap-4 justify-center flex-col ">
                     <p className="text-5xl text-blue_app_2">
