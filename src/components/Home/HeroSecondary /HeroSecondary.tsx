@@ -38,7 +38,7 @@ const HeroSecondary = () => {
                         <p>
                             Tata Projects’ Chief Strategy & Growth Officer, Mr. Himanshu Chaturvedi, joined the firm in 2018. He is in charge of creating the company’s strategic plan, as well as identifying business growth opportunities, technology alliances, and focusing on the Sustainability / Clean Energy business offering. He is also in charge of Marketing Communication and serves as the interim Head of the Services division
                         </p>
-                        <div className="flex justify-end items-end w-full translate-x-12">
+                        <div className="flex justify-end items-end w-full lg:translate-x-12">
                             <ImageIcons alt="bod" src={commaDown} width={30} className="-translate-x-6 mt-2" />
                         </div>
 
